@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carta.css">
+    <title>Projeto Carta</title>
+</head>
+<body>
+    
+    <div id="envelope">
+        <div class="flap"></div>  <!-- Aba superior -->
+        <div class="letter"></div> <!-- Carta -->
+        <div class="body"></div>  <!-- Corpo do envelope -->
+    </div>
+
+    <div class="buttons">
+        <button onclick="openLetter()">ABRIR</button>
+        <button onclick="resetLetter()">FECHAR</button>
+    </div>
+
+    <div class="letter">
+        <a href="carta.html"
+        class="letter-link">Clique Aqui!'-'</a>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.querySelector('.letter').classList.add('show');
+            document.querySelector('.flap').classList.add('open');
+        }
+
+        function resetLetter() {
+            document.querySelector('.letter').classList.remove('show');
+            document.querySelector('.flap').classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>
